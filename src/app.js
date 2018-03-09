@@ -9,7 +9,7 @@ class App {
   }
 
     fetchBooks(){
-      fetch(`http://localhost:3000/api/v1/books`)
+      fetch(`https://morning-shore-28838.herokuapp.com/api/v1/books`)
       .then((res)=> res.json())
       .then((json)=>this.listAllBooks(json))
     }
@@ -39,7 +39,7 @@ class App {
 
     findBookAuthor(bookObj){
       let author_id = bookObj.author_id
-      fetch(`http://localhost:3000/api/v1/authors/${author_id}`)
+      fetch(`https://morning-shore-28838.herokuapp.com/api/v1/authors/${author_id}`)
         .then((res)=>res.json())
         .then((json)=>this.showBookAuthor(json))
     }
@@ -56,7 +56,7 @@ class App {
     }
 
     fetchAuthorList(){
-      fetch("http://localhost:3000/api/v1/authors")
+      fetch("https://morning-shore-28838.herokuapp.com/api/v1/authors")
       .then(res => res.json())
       .then(json => this.showsAuthorList(json))
     }
@@ -93,7 +93,7 @@ class App {
             	}
             })
         }
-        fetch('http://localhost:3000/api/v1/books',options)
+        fetch('https://morning-shore-28838.herokuapp.com/api/v1/books',options)
         .then((res)=>res.json())
         .then((json)=>console.log(json))
       })
@@ -118,7 +118,7 @@ class App {
               }
             })
           }
-        fetch('http://localhost:3000/api/v1/authors',options)
+        fetch('https://morning-shore-28838.herokuapp.com/api/v1/authors',options)
          .then((res)=>res.json())
          .then((json)=>this.authorList.innerHTML +=`<option value=${json.id}>${json.name}</option>`);
       })
