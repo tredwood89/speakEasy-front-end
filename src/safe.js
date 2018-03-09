@@ -35,7 +35,7 @@ function renderDom(){
 }
 
 function safeLoad(){
-  fetch("http://localhost:3000/api/v1/comments")
+  fetch("https://morning-shore-28838.herokuapp.com/api/v1/comments")
   .then(res => res.json())
   .then(json => {
     let sortedComments = sortByDate(json)
