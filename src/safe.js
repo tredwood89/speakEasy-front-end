@@ -109,7 +109,7 @@ function showComments(list){
       /// then fetch
       //// then verify that what's on the page is the same as the return of the fetch
 
-      fetch(`http://localhost:3000/api/v1/comments/${commentId}`, options)
+      fetch(`https://morning-shore-28838.herokuapp.com/api/v1/comments/${commentId}`, options)
         .then((res) => res.json())
         .then((json) => {
           console.log(json)
@@ -175,7 +175,7 @@ function showComments(list){
           },
           body:JSON.stringify({content:commentSubmission})
         }
-        fetch('http://localhost:3000/api/v1/comments',options)
+        fetch('https://morning-shore-28838.herokuapp.com/api/v1/comments',options)
           .then((res)=>res.json())
           .then((json)=>console.log(json))
         })
