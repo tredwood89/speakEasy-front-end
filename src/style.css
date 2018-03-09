@@ -1,0 +1,105 @@
+/*http://www.peauxeticexpressions.com/wp-content/uploads/2017/05/Books.jpeg*/
+body {
+    color: white;
+    background-image: url('http://www.peauxeticexpressions.com/wp-content/uploads/2017/05/Books.jpeg');
+}
+/*h1 span::before {
+  content: "\A";
+}*/
+.book_show {
+
+  width: 375px;
+  height: 200px;
+  margin: auto;
+  position: relative;
+  font-size: large;
+
+  background-color:#2f563661 ;
+  border-style:thin;
+  border-color:green;
+  color: white;
+
+    }
+
+.image{
+  max-width:300px;
+  max-height:300px;
+  /*width: auto;
+  height: auto;*/
+  float: right;
+}
+
+.books  {
+    /*height:150px;
+    width:50%;*/
+    float: right;
+    font-size: large;
+    background-color:#0d155857 ;
+    border-style:thin;
+    border-color:green;
+
+    }
+
+.form {
+
+    width: 375px;
+    height: 400px;
+    margin: auto;
+    position: relative;
+  background-color: #ffccd569;
+  border-style:thin;
+  border-color:green;
+}
+input {
+  width: 275px;
+  height: 25px;
+  /*background-color: #a6fc9dbf;*/
+}
+#newBook{
+  padding: 1em;
+  background-color:#4d4c4d69 ;
+  border-style:thin;
+  border-color:green;
+}
+
+.comment-lister {
+      width: 700px;
+      height: 200px;
+      margin: auto;
+      position: relative;
+      background-color: #ffccd569;
+    /*border-style:solid;
+    border-color:green;*/
+}
+
+.likes{
+  position:relative;
+
+}
+
+h3{
+  color:#0a1d0b;
+}
+
+p {
+font-size:small;
+color: #f3b0b0;
+}
+
+#li {
+  color: white;
+}
+
+.bookfo{
+  /*background-color:#234a2366;*/
+  color:#fff27f;
+  font-size: large;
+}
+
+.bookP{
+  font-size: large;
+}
+#title{
+  text-align: center;
+  color: #5d4670;
+}

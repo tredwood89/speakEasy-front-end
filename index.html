@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Weekend Warrior Project</title>
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
+  </head>
+
+  <body>
+    <img class="image" src="https://media0.giphy.com/media/tpxIHRyr0Ie6k/giphy.gif">
+    <div class="books" style="float:left">
+      <h1>List of Books</h1>
+      <div id="book-list"></div>
+    </div>
+
+    <div class="book_show" >
+      <h2>Book Info</h2>
+      <div id="book_show">
+      </div>
+    </div>
+
+
+    <div class="form" >
+      <h2>Add Book to Book List</h2>
+      <div id="newBook">
+
+
+      <form name="books_form" action="index.html" method="post">
+        <input type="text" id="book-title" name="title" placeholder="enter title"><br>
+        <input type="text" id="book-genre"name="genre" placeholder="enter genre"><br>
+        <select id="authorList" name="post[author_id]">
+          <option value="">Select Author</option>
+          </select>
+          <input type="submit"  value="Create Book">
+        </form>
+        <h5> Add new Author to the list</h5>
+      <form name="author_form" action="index.html" method="post">
+        <input type="text" id="author-button"name="author" placeholder="Author's name"><br>
+        <input type="text" id="author-url" name="author_url" placeholder="Author's url">
+        <input type="submit"  id="submit_author" value="Add Author">
+      </form>
+    </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+    <!-- <form id="create-task-form" action="#" method="post" style="visibility: hidden;">
+      <label for="parent-list">Select List:</label>
+      <select id="parent-list" name="parent-list"></select>
+      <label for="new-task-description">Task description:</label>
+      <input type="text" id="new-task-description" name="new-task-description" placeholder="description">
+      <label for="new-task-priority">Priority level:</label>
+      <input type="text" id="new-task-priority" name="new-task-priority" placeholder="priority">
+      <input type="submit" value="Create New Task">
+    </form> -->
+    <!-- <script type="text/javascript" src="src/safe_style.css"></script> -->
+    <script type="text/javascript" src="src/safe.js"></script>
+    <script type="text/javascript" src="src/app.js"></script>
+    <script type="text/javascript" src="src/index.js"></script>
+  </body>
+</html>
